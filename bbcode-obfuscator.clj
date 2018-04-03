@@ -5,8 +5,7 @@
 (def muts
   [(to-mut (fn [char opening] (if opening (str "[b]" char) (str "[/b]" char))))
    (to-mut (fn [char opening] (if opening (str "[i]" char) (str "[/i]" char))))
-   (to-mut (fn [char opening]
-             (if opening (str "[u]" char) (str "[/u]" char))))])
+   (to-mut (fn [char opening] (if opening (str "[u]" char) (str "[/u]" char))))])
 
 (defn mut-char
   [char]
